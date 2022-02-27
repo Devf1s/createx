@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- --- Owl Carousel --- -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<!-- --- Fonts --- -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="shorcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Contacts</title>
+	<style>
+		.header {
+			background: #fff;
+		}
+		.nav__link:nth-child(5) {
+			color: red;
+		}
+	</style>
+</head>
+<body>			
+@@include('_header.html')
+<section class="contacts">
+	<div class="container">
+		<div class="contacts__inner">
+			<div class="contacts__left">
+				<span class="section__suptitle">
+					Contact info
+				</span>
+				<h1 class="section__title">
+					Get in touch
+				</h1>
+				<div class="contacts__info">
+					<div class="contacts__box">
+						<img src="img/contacts/touch/chat.svg" alt="Chat">
+						<p class="stats__text">
+							Talk to us:
+						</p>
+						<a href="mailto:hello@createx.com" class="video__text">
+							hello@createx.com
+						</a>
+					</div>
+					<div class="contacts__box">
+						<img src="img/contacts/touch/phone.svg" alt="iPhone">
+						<p class="stats__text">
+							Call us:
+						</p>
+						<a href="tel:+4055550128" class="video__text">
+							(405) 555-0128
+						</a>
+					</div>
+					<div class="contacts__box">
+						<img src="img/contacts/touch/location.svg" alt="Address">
+						<p class="stats__text">
+							Address:
+						</p>
+						<a href="mailto:hello@createx.com" class="video__text">
+							2464 Royal Ln. Mesa, New Jersey 45463, USA
+						</a>
+					</div>
+				</div>
+				<div class="contacts__social">
+					<p class="section__suptitle">
+						Follow us:
+					</p>
+					<ul class="social social--contacts">
+						<li class="social__link">
+							<a href="https://www.facebook.com/">
+								<svg width="24" height="24"><use href="#facebook"></use></svg>
+							</a>
+						</li>
+						<li class="social__link">
+							<a href="https://twitter.com/">
+								<svg width="24" height="24"><use href="#twitter"></use></svg>
+							</a>
+						</li>
+						<li class="social__link">
+							<a href="https://www.youtube.com/">
+								<svg width="24" height="24"><use href="#youtube"></use></svg>
+							</a>
+						</li>
+						<li class="social__link">
+							<a href="https://telegram.org/">
+								<svg width="24" height="24"><use href="#telegram"></use></svg>
+							</a>
+						</li>
+						<li class="social__link">
+							<a href="https://www.instagram.com/">
+								<svg width="24" height="24"><use href="#instagram"></use></svg>
+							</a>
+						</li>
+						<li class="social__link social__link--last">
+							<a href="https://ru.linkedin.com/">
+								<svg width="24" height="24"><use href="#linked-in"></use></svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contacts__right" id="map">
+				<img src="img/contacts/touch/map.jpg" alt="Map">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="notify">
+	<div class="container">
+		<div class="notify__inner">
+			<div class="notify__left">
+				<img src="img/contacts/woman.svg" alt="Woman">
+			</div>
+			<div class="notify__right">
+				<span class="section__suptitle">
+					Any questions?
+				</span>
+				<h2 class="section__title">
+					Drop us a line
+				</h2>
+				<form action="/" class="notify-form">
+					<div class="discount-form__item register__item">
+						<p class="discount-form__text section__text">
+							First Name*
+						</p>
+						<input type="name" class="product-input notify-input" placeholder="Your full name" required>
+					</div>
+					<div class="discount-form__item register__item">
+						<p class="discount-form__text section__text">
+							Last  Name*
+						</p>
+						<input type="name" class="product-input notify-input" placeholder="Your last name" required>
+					</div>
+					<div class="discount-form__item register__item">
+						<p class="discount-form__text section__text">
+							Email*
+						</p>
+						<input type="name" class="product-input notify-input" placeholder="Your working email" required>
+					</div>
+					<div class="discount-form__item register__item">
+						<p class="discount-form__text section__text">
+							Phone
+						</p>
+						<input type="name" class="product-input notify-input" placeholder="Your phone number" required>
+					</div>
+					<div class="discount-form__item register__item">
+						<p class="discount-form__text section__text">
+							Message*
+						</p>
+						<textarea name="message" id="message" class="notify__message product-input" rows="5" placeholder="Your message" required></textarea>
+					</div>
+					<div class="notify__footer">
+						<div class="notify__deal">
+							<input type="checkbox" class="notify__checkbox" id="privacy" value="agree">
+							<label for="privacy" class="section__text">
+								I agree to receive communications from Createx Online School
+							</label>
+						</div>
+						<button class="btn btn-events btn-notify" type="submit">
+							Send message
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+@@include('_footer.html')
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

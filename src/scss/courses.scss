@@ -1,0 +1,280 @@
+
+.certificate-courses {
+	padding: 120px 0;
+
+	.certificate__inner {
+		align-items: center;
+	}
+
+	.certificate__right img {
+		width: 100%;
+		float: right;
+	}
+}
+
+.testimonials-courses {
+	padding: 80px 0 100px;
+	background: #f4f5f6;			
+}
+
+.studying {
+	background: url('../img/courses/background.png') top no-repeat;
+	padding-bottom: 120px;
+}
+
+.product__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 80px;
+
+	.benefit-tabs {
+		margin-bottom: 0;
+	}
+}
+
+.product-tabs {
+	display: flex;
+	font-size: 16px;
+}
+
+.product-tabs__link {
+	color: #9a9ca5;
+	margin-right: 12px;
+
+	a {
+		display: flex;
+		padding: 10px 20px !important;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.product__count {
+	font-size: 10px;
+	font-weight: 900;
+	line-height: 15px;
+	padding: 0 0 11px 4px;
+}
+
+.product__search {
+	position: relative;
+}
+
+.product-input {
+	// width: 100%;
+	// max-width: 315px;
+	width: 315px;
+	background: #fff;
+	border: 1px solid #d7dadd;
+	border-radius: 4px;
+	padding: 12px 16px;
+
+	font-size: 14px;
+	line-height: 21px;
+	color: #9a9ca5;
+
+	&:focus {
+		border-color: #c1c6ca;
+	}
+}
+
+.product-btn {
+	position: absolute;
+	right: 15px;
+  	top: 50%;
+  	transform: translateY(-50%);
+
+	background: transparent;
+}
+
+.product-wraps {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 30px 0;
+
+	margin-bottom: 80px;
+}
+
+.product-wrap__item {
+	width: 100%;
+	max-width: 390px;
+	height: 438px;
+
+	display: flex;
+	flex-direction: column;
+
+	background: #fff;
+	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 
+		0px 30px 24px -10px rgba(154, 156, 165, 0.05), 
+		0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+		0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	border-radius: 4px;
+	transition: all .2s ease;
+
+	&:hover {
+		box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16),
+			0px 30px 24px -10px rgba(154, 156, 165, 0.1),
+			0px 12px 10px -6px rgba(154, 156, 165, 0.08),
+			0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+	}
+}
+
+.product-cnt {
+	height: 100%;
+	padding: 24px;
+	border: 1px solid #e5e8ed;
+}
+
+.card__badge {
+	&--development {
+		width: 99px;
+		background: #7772f1;
+	}
+}
+
+.load {
+	display: flex;
+	justify-content: center;
+	img {
+		margin-right: 16px;
+	}
+	a {
+		color: #424551 !important;
+
+		&:hover {
+			color: #787a80 !important;
+		}
+	}
+}
+
+/* --- Media --- */
+@media screen and (max-width: 1200px) {
+	.certificate-courses { 
+		.certificate__right-courses,
+		.certificate__right-courses img {
+			width: 93%;
+			float: right;
+		}
+
+		.certificate__title {
+			font-size: 44px;
+		}
+	}
+
+	.product__header {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.product__search {
+		margin-top: 20px;
+	}
+
+	.product-wrap__item {
+		max-width: 325px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.certificate-courses {
+		.certificate__inner {
+			flex-direction: column-reverse;
+		}
+		
+		.certificate__right-courses,
+		.certificate__right-courses img {
+			width: 93%;
+			display: flex;
+			margin: 0 auto;
+			float: none;
+		}
+
+		.certificate__left {
+			margin-top: 30px;
+			text-align: center;
+		}
+	}
+
+	.product-wraps {
+		justify-content: center;
+		gap: 30px;
+	}
+
+	.product-wrap__item {
+		max-width: 340px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.certificate-courses {
+		.certificate__title {
+			font-size: 42px;
+		}
+	}
+
+	.studying
+	.section__title {
+		font-size: 38px;
+	}
+
+	.studying
+	.benefit-tabs {
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 0;
+	}
+
+	.product-tabs__link {
+		margin-bottom: 10px;
+	}
+
+	.product__search {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.certificate-courses {
+		.certificate__right-courses,
+		.certificate__right-courses img {
+			width: 100%;
+		}	
+
+		.certificate__left {
+			max-width: 295px;
+		}
+
+		.certificate__title {
+			font-size: 35px;
+			line-height: 55px;
+		}
+	}
+
+	.studying 
+	.section__title {
+		font-size: 36px;
+	}
+
+	.studying
+	.benefit-tabs {
+		flex-direction: row;
+	}
+
+	.studying
+	.benefits__title {
+		max-width: inherit;
+	}
+
+	.product-input {
+		max-width: 270px;
+	}
+
+	.product-wrap__item {
+		max-width: 285px;
+	}
+}

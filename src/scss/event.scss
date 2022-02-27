@@ -1,0 +1,324 @@
+
+.event__link {
+	color: #ff3f3a !important;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.about--event {
+	.about__right {
+		height: 455px;
+	}
+}
+
+.speaker__logos {
+	display: flex;
+	margin: 40px 0;
+
+	img {
+		margin-right: 40px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.speaker {
+	padding-bottom: 120px;
+
+	.whom {
+		padding: 180px 0;
+	}
+}
+
+.newsletter {
+	padding: 60px 103px;
+	background: url('../img/event/newsletter.png') no-repeat center
+		/ cover;
+}
+
+.newsletter__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.newsletter__title {
+	margin-bottom: 48px !important;
+}
+
+.newsletter__right {
+	width: 100%;
+	max-width: 600px;
+}
+
+.newsletter {
+	.discount-form {
+		justify-content: start;
+	}
+
+	.discount-input {
+		margin-right: 20px;
+		max-width: inherit;
+	}
+
+	.product-input {
+		width: 422px;
+	}
+
+	.btn-discount {
+		padding: 0 40px !important;
+	}
+}
+
+.checkbox {
+	display: flex;
+	margin-top: 24px;
+
+	img {
+		margin-right: 12px;
+	}
+}
+
+.register--event {
+	background: #fff !important;
+
+	.register__inner {
+		flex-direction: row-reverse;
+	}
+
+	.section__text {
+		width: 505px;
+		margin-top: 24px;
+	}
+}
+
+.others--event {
+	.owl-carousel .owl-stage-outer {
+		padding-bottom: 80px;
+	}
+}
+
+.event-card {
+	width: 100%;
+	max-width: 390px;
+	height: 323px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	
+	background: #fff;
+	border: 1px solid #e5e8ed;
+	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 
+		0px 30px 24px -10px rgba(154, 156, 165, 0.05), 
+		0px 12px 10px -6px rgba(154, 156, 165, 0.04), 
+		0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	transition: all .1s linear;
+	border-radius: 4px;
+	padding: 24px;
+	
+	&:hover {
+		box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 
+			0px 30px 24px -10px rgba(154, 156, 165, 0.1), 
+			0px 12px 10px -6px rgba(154, 156, 165, 0.08), 
+			0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+	}
+}
+
+.event__count {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 42px;
+	color: #ff3f3a;
+
+	margin-bottom: 4px;
+}
+
+.event__text {
+	font-size: 18px;
+	line-height: 27px;
+	margin-bottom: 8px;
+}
+
+.btn-event {
+	width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+	.newsletter {
+		padding: 60px 40px;
+	}
+
+	.newsletter__right {
+		max-width: 540px;
+	}
+
+	.register--event {
+		.register__left,
+		.register__left img {
+			width: 90%;
+			float: right;
+			margin-bottom: 0;
+		}
+
+		.section__text {
+			max-width: 495px;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.about--event
+	.about__right {
+		margin-top: 30px;
+	}
+
+	.newsletter {
+		padding: 50px 40px;
+	}
+
+	.newsletter__inner {
+		align-items: start;
+	}
+
+	.newsletter 
+	.discount-input {
+		margin-right: 0;
+		margin-bottom: 20px;
+	} 
+
+	.newsletter__right {
+		max-width: 355px;
+	}
+
+	.register--event {
+		.register__left {
+			margin-bottom: 0;
+		}
+		
+		.register__header {
+			text-align: left;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.newsletter {
+		padding: 50px 60px;
+	}
+
+	.newsletter__inner {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.newsletter__left {
+		padding-left: 50px;
+	}
+
+	.newsletter__right {
+		max-width: 600px;
+	}
+
+	.newsletter__title {
+		margin-top: 10px;
+	}
+
+	.discount-form {
+		align-items: center;
+	}
+
+	.register--event {
+		.register__inner {
+			flex-direction: column;
+		}
+
+		.register__left,
+		.register__left img {
+			width: 87%;
+			float: none;
+			margin-bottom: 10px;
+		}
+	}
+
+	.others--event {
+		padding-top: 90px;
+
+		.team__title {
+			margin-bottom: 135px;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.speaker__logos {
+		flex-wrap: wrap;
+		gap: 20px 0;
+		img {
+			margin-right: 20px;
+		}
+	}	
+
+	.speaker {
+		.curator__subtitle {
+			margin-bottom: 20px;
+		}
+
+		.section__title {
+			margin-bottom: 20px;
+		}
+
+		.curator__right {
+			max-width: 288px;
+		}
+	}
+
+	.newsletter {
+		padding: 40px 5px;
+
+		.product-input {
+			width: 275px;
+		}
+	}
+
+	.newsletter__left,
+	.newsletter__left img {
+		width: 90%;
+		margin-right: 10px;
+	}
+
+	.newsletter__right {
+		max-width: 300px;
+	}
+
+	.checkbox {
+		width: 100%;
+		max-width: 270px;
+	}
+
+	.register--event {
+		.section__text {
+			max-width: 315px;
+		}
+	}
+
+	.others--event {
+		padding-top: 50px;
+
+		.section__suptitle {
+			font-size: 14px;
+		}
+
+		.section__title {
+			font-size: 35px;
+		}
+
+		.team__title {
+			margin-bottom: 125px;
+		}
+	}
+}

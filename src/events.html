@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- --- Owl Carousel --- -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<!-- --- Fonts --- -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="shorcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Events</title>
+	<style>
+		.header {
+			background: #fff;
+		}
+		.nav__link:nth-child(3) {
+			color: red;
+		}
+	</style>
+</head>
+<body>			
+@@include('_header.html')
+<section class="lectures">
+	<div class="container">
+		<span class="benefits__suptitle section__suptitle">
+			Our events
+		</span>
+		<h2 class="benefits__title section__title">
+			Lectures, workshops & master-classes
+		</h2>
+		<div class="journal__header">
+			<div class="journal__category">
+				<p class="section__text">Event category</p>
+				<select name="sort" class="journal__filter">
+					<option value="video" class="journal__option">
+						all themes 
+					</option>
+					<option value="video" class="journal__option">
+						lecture
+					</option>
+					<option value="article" class="journal__option">
+						workshop
+					</option>
+					<option value="podcast" class="journal__option">
+						master-classes
+					</option>
+				</select>
+			</div>
+			<div class="journal__category events__category--first">
+				<p class="section__text">Sort by</p>
+				<select name="category" class="journal__filter">
+					<option value="new" class="journal__option">
+						newest
+					</option>
+					<option value="lecture" class="journal__option">
+						recent
+					</option>
+					<option value="old" class="journal__option">
+						long ago
+					</option>
+				</select>
+			</div>
+			<div class="journal__category events__category--last">
+				<p class="section__text">Show</p>
+				<input name="show" type="number" min="1" max="9" value="9" class="journal__filter events__filter">	
+				<p class="show__text">events per page</p>
+			</div>
+			<div class="product__search">
+				<input type="search" class="product-input events-input" placeholder="Search blog...">
+				<button class="product-btn" type="button">
+					<img src="img/courses/search.svg" alt="Search">
+				</button>
+			</div>
+			<div class="events__view">
+				<a href="#">
+					<svg class="list" width="20" height="20"><use href="#list"></use></svg>
+				</a>
+				<a href="#">
+					<svg class="grid" width="20" height="20"><use href="#grid"></use></svg>
+				</a>
+			</div>
+		</div> <!-- --- journal__header --- -->
+		<div class="events active"> <!-- --- events --- -->
+			<div class="events__item events__item--events active">
+				<div class="events__date">
+					<h2 class="events__count">
+						05
+					</h2>
+					<p class="events__text">
+						August 
+					</p>
+					<span class="section__text events__time">
+						11:00 – 14:00
+					</span>
+				</div>
+				<div class="events__info">
+					<p class="events__text">
+						Formation of the organizational structure of the company in the face of uncertainty.
+					</p>
+					<span class="section__text events__subtitle">
+						Onine master-class
+					</span>
+				</div>
+				<div class="events__btn">
+					<a href="event.html" class="btn btn-intro">
+						View more
+					</a>
+				</div>
+			</div>
+			<div class="events__item events__item--events">
+				<div class="events__date">
+					<h2 class="events__count">
+						24
+					</h2>
+					<p class="events__text">
+						July
+					</p>
+					<span class="section__text events__time">
+						11:00 – 12:30
+					</span>
+				</div>
+				<div class="events__info">
+					<p class="events__text">
+						Building a customer service department. Best Practices.
+					</p>
+					<span class="section__text events__subtitle">
+						Onine lecture
+					</span>
+				</div>
+				<div class="events__btn">
+					<a href="event.html" class="btn btn-intro">
+						View more
+					</a>
+				</div>
+			</div>
+			<div class="events__item events__item--events">
+				<div class="events__date">
+					<h2 class="events__count">
+						16
+					</h2>
+					<p class="events__text">
+						July
+					</p>
+					<span class="section__text events__time">
+						10:00 – 13:00
+					</span>
+				</div>
+				<div class="events__info">
+					<p class="events__text">
+						How to apply methods of speculative design in practice. Worldbuilding prototyping.
+					</p>
+					<span class="section__text events__subtitle">
+						Onine workshop
+					</span>
+				</div>
+				<div class="events__btn">
+					<a href="event.html" class="btn btn-intro">
+						View more
+					</a>
+				</div>
+			</div>
+			<div class="events__item events__item--events">
+				<div class="events__date">
+					<h2 class="events__count">
+						10
+					</h2>
+					<p class="events__text">
+						July
+					</p>
+					<span class="section__text events__time">
+						9:00 – 14:00
+					</span>
+				</div>
+				<div class="events__info">
+					<p class="events__text">
+						Find and evaluate: search and assessment tools for candidates.
+					</p>
+					<span class="section__text events__subtitle">
+						Onine workshop
+					</span>
+				</div>
+				<div class="events__btn">
+					<a href="event.html" class="btn btn-intro">
+						View more
+					</a>
+				</div>
+			</div>
+			<div class="events__item events__item--events">
+				<div class="events__date">
+					<h2 class="events__count">
+						27
+					</h2>
+					<p class="events__text">
+						June
+					</p>
+					<span class="section__text events__time">
+						15:00 – 19:00
+					</span>
+				</div>
+				<div class="events__info">
+					<p class="events__text">
+						Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.
+					</p>
+					<span class="section__text events__subtitle">
+						Onine master-class
+					</span>
+				</div>
+				<div class="events__btn">
+					<a href="event.html" class="btn btn-intro">
+						View more
+					</a>
+				</div>
+			</div>
+			<div class="events__item events__item--events">
+				<div class="events__date">
+					<h2 class="events__count">
+						15
+					</h2>
+					<p class="events__text">
+						June
+					</p>
+					<span class="section__text events__time">
+						10:00 – 12:00
+					</span>
+				</div>
+				<div class="events__info">
+					<p class="events__text">
+						Marketing or growth hacking: main differences and what business needs.
+					</p>
+					<span class="section__text events__subtitle">
+						Onine lecture
+					</span>
+				</div>
+				<div class="events__btn">
+					<a href="event.html" class="btn btn-intro">
+						View more
+					</a>
+				</div>
+			</div>
+			<div class="events__item events__item--events">
+				<div class="events__date">
+					<h2 class="events__count">
+						02
+					</h2>
+					<p class="events__text">
+						June
+					</p>
+					<span class="section__text events__time">
+						11:00 – 13:00
+					</span>
+				</div>
+				<div class="events__info">
+					<p class="events__text">
+						How to brief a client and present your design to approve it from the first show.
+					</p>
+					<span class="section__text events__subtitle">
+						Onine lecture
+					</span>
+				</div>
+				<div class="events__btn">
+					<a href="event.html" class="btn btn-intro">
+						View more
+					</a>
+				</div>
+			</div>
+			<div class="events__item events__item--events">
+				<div class="events__date">
+					<h2 class="events__count">
+						29
+					</h2>
+					<p class="events__text">
+						May
+					</p>
+					<span class="section__text events__time">
+						11:00 – 12:00
+					</span>
+				</div>
+				<div class="events__info">
+					<p class="events__text">
+						Who is a project manager and do I want to be PM?
+					</p>
+					<span class="section__text events__subtitle">
+						Onine lecture
+					</span>
+				</div>
+				<div class="events__btn">
+					<a href="event.html" class="btn btn-intro">
+						View more
+					</a>
+				</div>
+			</div>
+			<div class="events__item events__item--events">
+				<div class="events__date">
+					<h2 class="events__count">
+						18	
+					</h2>
+					<p class="events__text">
+						May
+					</p>
+					<span class="section__text events__time">
+						10:00 – 12:00
+					</span>
+				</div>
+				<div class="events__info">
+					<p class="events__text">
+						The company's business page as an additional tool to support the announcement of vacancies.
+					</p>
+					<span class="section__text events__subtitle">
+						Onine lecture
+					</span>
+				</div>
+				<div class="events__btn">
+					<a href="event.html" class="btn btn-intro">
+						View more
+					</a>
+				</div>
+			</div>	
+		</div> <!-- --- events --- -->
+		<div class="events-cards"> <!-- --- events-cards --- -->
+			<div class="event-card">
+				<div class="event-card__date">
+					<h3 class="event__count">
+						05 Aug 
+					</h3>
+					<span class="section__text">
+						11:00 – 14:00
+					</span>
+				</div>
+				<div class="event-card__info">
+					<p class="event__text">
+						Formation of the organizational structure of the company in the face of uncertainty.
+					</p>
+					<p class="section__text">
+						Onine master-class
+					</p>
+				</div>
+				<a href="event.html" class="btn btn-intro btn-who btn-event">
+					View more
+				</a>
+			</div>
+			<div class="event-card">
+				<div class="event-card__date">
+					<h3 class="event__count">
+						24 Jul
+					</h3>
+					<span class="section__text">
+						11:00 – 12:30
+					</span>
+				</div>
+				<div class="event-card__info">
+					<p class="event__text">
+						Building a customer service department. Best Practices.
+					</p>
+					<p class="section__text">
+						Onine lecture
+					</p>
+				</div>
+				<a href="event.html" class="btn btn-intro btn-who btn-event">
+					View more
+				</a>
+			</div>
+			<div class="event-card">
+				<div class="event-card__date">
+					<h3 class="event__count">
+						16 Jul
+					</h3>
+					<span class="section__text">
+						10:00 – 13:00
+					</span>
+				</div>
+				<div class="event-card__info">
+					<p class="event__text">
+						How to apply methods of speculative design in practice. Worldbuilding prototyping.
+					</p>
+					<p class="section__text">
+						Onine workshop
+					</p>
+				</div>
+				<a href="event.html" class="btn btn-intro btn-who btn-event">
+					View more
+				</a>
+			</div>
+			<div class="event-card">
+				<div class="event-card__date">
+					<h3 class="event__count">
+						10 Jul
+					</h3>
+					<span class="section__text">
+						9:00 – 14:00
+					</span>
+				</div>
+				<div class="event-card__info">
+					<p class="event__text">
+						Find and evaluate: search and assessment tools for candidates.
+					</p>
+					<p class="section__text">
+						Onine workshop
+					</p>
+				</div>
+				<a href="event.html" class="btn btn-intro btn-who btn-event">
+					View more
+				</a>
+			</div>
+			<div class="event-card">
+				<div class="event-card__date">
+					<h3 class="event__count">
+						27 Jun
+					</h3>
+					<span class="section__text">
+						15:00 – 19:00
+					</span>
+				</div>
+				<div class="event-card__info">
+					<p class="event__text">
+						Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI
+					</p>
+					<p class="section__text">
+						Onine master-class
+					</p>
+				</div>
+				<a href="event.html" class="btn btn-intro btn-who btn-event">
+					View more
+				</a>
+			</div>
+			<div class="event-card">
+				<div class="event-card__date">
+					<h3 class="event__count">
+						15 Jun
+					</h3>
+					<span class="section__text">
+						11:00 – 12:00
+					</span>
+				</div>
+				<div class="event-card__info">
+					<p class="event__text">
+						Marketing or growth hacking: main differences and what business needs
+					</p>
+					<p class="section__text">
+						Onine  lecture
+					</p>
+				</div>
+				<a href="event.html" class="btn btn-intro btn-who btn-event">
+					View more
+				</a>
+			</div>
+			<div class="event-card">
+				<div class="event-card__date">
+					<h3 class="event__count">
+						02 Jul
+					</h3>
+					<span class="section__text">
+						11:00 – 13:00
+					</span>
+				</div>
+				<div class="event-card__info">
+					<p class="event__text">
+						How to brief a client and present your design to approve it from the first show.
+					</p>
+					<p class="section__text">
+						Onine  lecture
+					</p>
+				</div>
+				<a href="event.html" class="btn btn-intro btn-who btn-event">
+					View more
+				</a>
+			</div>
+			<div class="event-card">
+				<div class="event-card__date">
+					<h3 class="event__count">
+						29 May
+					</h3>
+					<span class="section__text">
+						11:00 – 12:00
+					</span>
+				</div>
+				<div class="event-card__info">
+					<p class="event__text">
+						Who is a project manager and do I want to be PM?
+					</p>
+					<p class="section__text">
+						Onine  lecture
+					</p>
+				</div>
+				<a href="event.html" class="btn btn-intro btn-who btn-event">
+					View more
+				</a>
+			</div>
+			<div class="event-card">
+				<div class="event-card__date">
+					<h3 class="event__count">
+						18 May
+					</h3>
+					<span class="section__text">
+						10:00 – 12:00
+					</span>
+				</div>
+				<div class="event-card__info">
+					<p class="event__text">
+						The company's business page as an additional tool to support the announcement of vacancies.
+					</p>
+					<p class="section__text">
+						Onine  lecture
+					</p>
+				</div>
+				<a href="event.html" class="btn btn-intro btn-who btn-event">
+					View more
+				</a>
+			</div>
+		</div> <!-- --- events-cards --- -->
+		<nav class="pagenation">
+			<a href="#" class="page__link section__text active">
+				1
+			</a>
+			<a href="#" class="page__link section__text">
+				2
+			</a>
+			<a href="#" class="page__link section__text">
+				3
+			</a>
+			<a href="#" class="page__link section__text">
+				4
+			</a>
+			<a href="#">
+				<img src="img/arrow-black.svg" alt="Arrow">
+			</a>
+		</nav> 	
+	</div>
+</section>
+@@include('_subscribe.html')
+@@include('_footer.html')
+<div style="display: none;">
+	<svg>
+		<symbol id="list" width="20" height="20" viewBox="0 0 20 20">
+		<g>
+			<path d="M0.833252 2.91634C0.833252 1.76575 1.76599 0.833008 2.91658 0.833008H17.0833C18.2338 0.833008 19.1666 1.76575 19.1666 2.91634V7.08301C19.1666 8.2336 18.2338 9.16634 17.0833 9.16634H2.91658C1.76599 9.16634 0.833252 8.2336 0.833252 7.08301V2.91634ZM2.91658 2.49967C2.68647 2.49967 2.49992 2.68622 2.49992 2.91634V7.08301C2.49992 7.31313 2.68647 7.49967 2.91658 7.49967H17.0833C17.3134 7.49967 17.4999 7.31313 17.4999 7.08301V2.91634C17.4999 2.68622 17.3134 2.49967 17.0833 2.49967H2.91658Z" />
+			<path d="M0.833252 12.9163C0.833252 11.7657 1.76599 10.833 2.91658 10.833H17.0833C18.2338 10.833 19.1666 11.7657 19.1666 12.9163V17.083C19.1666 18.2336 18.2338 19.1663 17.0833 19.1663H2.91658C1.76599 19.1663 0.833252 18.2336 0.833252 17.083V12.9163ZM2.91658 12.4997C2.68647 12.4997 2.49992 12.6862 2.49992 12.9163V17.083C2.49992 17.3131 2.68647 17.4997 2.91658 17.4997H17.0833C17.3134 17.4997 17.4999 17.3131 17.4999 17.083V12.9163C17.4999 12.6862 17.3134 12.4997 17.0833 12.4997H2.91658Z" />
+		</g>
+		</symbol>
+
+		<symbol id="grid" width="20" height="20" viewBox="0 0 20 20">
+		<g>
+		<path d="M0.833333 2.91634C0.833333 1.76575 1.76607 0.833008 2.91667 0.833008H7.08333C8.23393 0.833008 9.16667 1.76575 9.16667 2.91634V7.08301C9.16667 8.2336 8.23393 9.16634 7.08333 9.16634H2.91667C1.76607 9.16634 0.833333 8.2336 0.833333 7.08301V2.91634ZM2.91667 2.49967C2.68655 2.49967 2.5 2.68622 2.5 2.91634V7.08301C2.5 7.31313 2.68655 7.49967 2.91667 7.49967H7.08333C7.31345 7.49967 7.5 7.31313 7.5 7.08301V2.91634C7.5 2.68622 7.31345 2.49967 7.08333 2.49967H2.91667Z" />
+		<path d="M0.833333 12.9163C0.833333 11.7657 1.76607 10.833 2.91667 10.833H7.08333C8.23393 10.833 9.16667 11.7657 9.16667 12.9163V17.083C9.16667 18.2336 8.23393 19.1663 7.08333 19.1663H2.91667C1.76607 19.1663 0.833333 18.2336 0.833333 17.083V12.9163ZM2.91667 12.4997C2.68655 12.4997 2.5 12.6862 2.5 12.9163V17.083C2.5 17.3131 2.68655 17.4997 2.91667 17.4997H7.08333C7.31345 17.4997 7.5 17.3131 7.5 17.083V12.9163C7.5 12.6862 7.31345 12.4997 7.08333 12.4997H2.91667Z" />
+		<path d="M10.8333 2.91634C10.8333 1.76575 11.7661 0.833008 12.9167 0.833008H17.0833C18.2339 0.833008 19.1667 1.76575 19.1667 2.91634V7.08301C19.1667 8.2336 18.2339 9.16634 17.0833 9.16634H12.9167C11.7661 9.16634 10.8333 8.2336 10.8333 7.08301V2.91634ZM12.9167 2.49967C12.6865 2.49967 12.5 2.68622 12.5 2.91634V7.08301C12.5 7.31313 12.6865 7.49967 12.9167 7.49967H17.0833C17.3135 7.49967 17.5 7.31313 17.5 7.08301V2.91634C17.5 2.68622 17.3135 2.49967 17.0833 2.49967H12.9167Z" />
+		<path d="M10.8333 12.9163C10.8333 11.7657 11.7661 10.833 12.9167 10.833H17.0833C18.2339 10.833 19.1667 11.7657 19.1667 12.9163V17.083C19.1667 18.2336 18.2339 19.1663 17.0833 19.1663H12.9167C11.7661 19.1663 10.8333 18.2336 10.8333 17.083V12.9163ZM12.9167 12.4997C12.6865 12.4997 12.5 12.6862 12.5 12.9163V17.083C12.5 17.3131 12.6865 17.4997 12.9167 17.4997H17.0833C17.3135 17.4997 17.5 17.3131 17.5 17.083V12.9163C17.5 12.6862 17.3135 12.4997 17.0833 12.4997H12.9167Z" />
+		</g>
+		</symbol>
+
+		<symbol id="behance" width="24" height="24" viewBox="0 0 24 24">
+		<g clip-path="url(#clip0_2492_17701)">
+		<path d="M12.3652 15.1437C12.3652 13.1724 11.486 11.7153 9.66971 11.1692C10.9949 10.4961 11.6861 9.47637 11.6861 7.8902C11.6861 4.76268 9.49368 4 6.96423 4H0V19.7027H7.15926C9.84374 19.7027 12.3652 18.3341 12.3652 15.1437ZM3.24657 6.68058H6.29311C7.46432 6.68058 8.51851 7.03045 8.51851 8.47475C8.51851 9.8081 7.69836 10.3446 6.53816 10.3446H3.24657V6.68058ZM3.24557 17.036V12.7116H6.7842C8.21345 12.7116 9.11761 13.3452 9.11761 14.9538C9.11761 16.54 8.03842 17.036 6.71719 17.036H3.24557Z" fill="#787A80"/>
+		<path d="M18.7993 20C21.3537 20 23.008 18.7765 23.8041 16.1759H21.2117C20.9326 17.1466 19.7824 17.6597 18.8903 17.6597C17.169 17.6597 16.2648 16.5877 16.2648 14.7658H23.9792C24.2232 11.1198 22.3189 8.01257 18.7983 8.01257C15.5387 8.01257 13.3263 10.6174 13.3263 14.0297C13.3263 17.5711 15.4227 20 18.7993 20ZM18.7073 10.3721C20.1825 10.3721 20.9246 11.2937 21.0487 12.8009H16.2688C16.3658 11.3065 17.299 10.3721 18.7073 10.3721Z" fill="#787A80"/>
+		<path d="M15.6701 4.82507H21.6591V6.37177H15.6701V4.82507Z" fill="#787A80"/>
+		</g>
+		<defs>
+		<clipPath id="clip0_2492_17701">
+		<rect width="24" height="24" fill="white"/>
+		</clipPath>
+		</defs>
+		</symbol>
+	</svg>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

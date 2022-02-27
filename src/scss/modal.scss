@@ -1,0 +1,203 @@
+//* --- Modal Window --- *//
+.log-modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	flex-shrink: 0;
+	overflow: hidden;
+	overflow-y: auto;
+	visibility: hidden;
+	-webkit-overflow-scrolling: touch; // for Safari
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	z-index: 99;
+
+	/* To keep the window from sticking
+	 to the border indents */
+	// padding: 30px 0; true
+
+	&--active {
+		visibility: visible;
+		
+		.log-modal__window {
+			transform: scale(1);
+    		opacity: 1;
+		}
+	}
+}
+
+.log-modal__shadow {
+    position: fixed;
+    border:none;
+    display: block;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 98;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    background-color: #1E212C;
+}
+
+/* Active overlay */
+.log-modal__shadow--show {
+    pointer-events: auto;
+    opacity: 0.75;
+}
+
+/* To prevent the window from 
+	scrolling(for Safari on IOS) */
+.log-modal__opened {  
+    position: fixed;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.log-modal__wrap {
+    flex-shrink: 0;
+    flex-grow: 0;
+	
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.log-modal__window {
+	width: 100%;
+	max-width: 486px;
+
+	padding: 48px;
+	margin: 30px 0; // 50px 0; true
+
+    overflow: visible;
+	position: relative;
+	flex-shrink: 0;
+    flex-grow: 0;
+
+	background: #fff;
+	border: 1px solid #e5e8ed;
+	transition: all .2s ease;
+	transform: scale(0.9);
+    opacity: 0;
+}
+
+.log-modal__inner {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	.discount-form__text {
+		margin-bottom: 0;
+	}
+}
+
+.log-modal__close {
+	position: absolute;
+	top: 28px;
+	right: 28px;
+}
+
+.modal__text {
+	text-align: center;
+	margin-bottom: 24px !important;
+}
+
+.modal-form {
+	display: flex;
+	flex-direction: column;
+
+	.discount-form__item {
+		position: relative;
+
+		.discount-form__text {
+			margin-bottom: 8px;
+		}
+	}
+}
+
+.modal-input {
+	width: 100%;
+	max-width: 390px;
+}
+
+.password-control {
+	width: 15px;
+	height: 13px;
+	background: url('../img/modal/eye.svg') 0 0 no-repeat;
+	display: inline-block;
+	position: absolute;
+	top: 52px;
+	right: 16px;
+
+	&:after {
+		content: '';
+		width: 18px;
+		height: 2px;
+		position: absolute;
+		opacity: 0;
+		top: 5px;
+		right: -1px;
+		background: #424551;
+		transform: rotate(45deg);
+		transition: all .2s ease;
+	}
+
+	&.view {
+		&:after {
+			opacity: 1;
+		}
+	}
+}
+
+.modal__keep {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.discount-form__text.active {
+	color: #ff3f3a;
+}
+
+.btn-modal {
+	max-width: 390px;
+	margin-top: 20px;
+}
+
+.modal__account {
+	margin: 24px 0;
+	display: inline-flex;
+}
+
+.modal__footer {
+	padding-top: 24px;
+	border-top: 1px solid #e5e8ed;
+	text-align: center;
+
+	p {
+		color: #787a80;
+	}
+}
+
+.modal__socials {
+	max-width: 116px;
+	margin: 16px auto 0;
+	
+	display: flex;
+	justify-content: space-between;
+}

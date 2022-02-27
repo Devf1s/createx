@@ -1,0 +1,313 @@
+
+.contacts {
+	padding-bottom: 180px;
+
+	.stats__text:after {
+		display: none;
+	}
+}
+
+.contacts__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts__left {
+	width: 100%;
+	max-width: 395px;
+}
+
+.contacts__info {
+	margin-bottom: 48px;
+}
+
+.contacts__box {
+	padding-left: 36px;
+	margin-bottom: 24px;
+	position: relative;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+	
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	a {
+		font-weight: 400;
+	}
+}
+
+.social--contacts {
+	margin-top: 24px;
+
+	.social__link {
+		fill: #787A80;
+	}
+}
+
+.contacts__right {
+	position: relative;
+
+	&:after {
+		content: attr(data-pin);
+		cursor: pointer;
+		background: url('../img/contacts/touch/pin.svg') no-repeat;
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top: 36%;
+		left: 43%;
+		z-index: 2;
+	}
+}
+
+.notify {
+	padding-bottom: 180px;
+}
+
+.notify__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.notify__left {
+	display: block;
+}
+
+.notify__right {
+	width: 100%;
+	max-width: 705px;
+}
+
+.notify-form {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.notify-input {
+	width: 340px;
+}
+
+.notify__footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.notify__message {
+	width: 705px;
+	resize: none;
+}
+
+.notify__deal {
+	max-width: 315px;
+}
+
+.notify__checkbox {
+	position: absolute;
+  	z-index: -1;
+  	opacity: 0;
+}
+
+.notify__checkbox+label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+
+	&:before {
+		content: '';
+		width: 16px;
+		height: 16px;
+		margin-right: 12px;
+
+		display: inline-block;
+		flex-shrink: 0;
+  		flex-grow: 0;
+		
+		border: 1px solid #ff3f3a;
+		border-radius: 3px;
+	}
+}
+
+.notify__checkbox:checked+label::before {
+	background: #ff3f3a;
+	background-image: url('../img/contacts/check.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.btn-notify {
+	width: 100%;
+	max-width: 340px;
+}
+
+@media screen and (max-width: 1200px) {
+	.contacts__inner {
+		align-items: center;
+	}
+
+	.contacts__left {
+		max-width: 345px;
+	}
+
+	.contacts__right,
+	.contacts__right img {
+		width: 97%;
+		float: right;
+	}
+
+	.notify__left,
+	.notify__left img {
+		width: 85%;
+	}
+
+	.notify__right {
+		max-width: 615px;
+	}
+
+	.notify-input {
+		width: 300px;
+	}
+
+	.notify__message {
+		width: 615px;
+	}
+
+	.btn-notify {
+		max-width: 295px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.notify {
+		padding-bottom: 130px;
+	}
+
+	.notify__inner {
+		flex-direction: column-reverse;			
+	}
+
+	.notify__left, 
+	.notify__left img {
+		width: inherit;
+		margin-top: 20px;
+	}
+
+	.notify__right {
+		max-width: 705px;
+	}
+
+	.notify-input {
+		width: 340px;
+	}
+
+	.notify__message {
+		width: 705px;
+	}
+
+	.btn-notify {
+		max-width: 336px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.contacts {
+		padding-bottom: 130px;
+	}
+
+	.contacts__inner {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.contacts__left {
+		max-width: 395px;
+		margin-bottom: 40px;
+	}
+
+	.contacts__right {
+		margin: 0 auto; 
+	}
+
+	.contacts__right img {
+		width: 97%;
+		float: none;
+	}
+
+	.notify__right {
+		max-width: 575px;
+	}
+
+	.notify-input {
+		width: 279px;
+	}
+
+	.notify__message {
+		width: 575px;
+	}
+
+	.btn-notify {
+		max-width: 290px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.contacts,
+	.notify {
+		padding-bottom: 100px;
+	}
+
+	.contacts__left,
+	.contacts__right,
+	.contacts__right img {
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.notify-form {
+		justify-content: center;
+	}
+
+	.notify__footer {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.notify__checkbox+label {
+		margin-bottom: 15px;
+	}
+
+	.notify__right {
+		max-width: 575px;
+
+		.product-input {
+			max-width: 320px;
+		}
+	}
+
+	.notify-input {
+		width: 320px;
+	}
+
+	.notify__message {
+		width: 320px;
+	}
+
+	.btn-notify {
+		max-width: 305px;
+	}
+
+	.notify__left,
+	.notify__left img {
+		width: 85%;
+		margin: 20px auto 0;
+	}
+}

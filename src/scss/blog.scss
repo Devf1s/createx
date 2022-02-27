@@ -1,0 +1,288 @@
+
+.journal {
+	padding-bottom: 180px;
+}
+
+.journal__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.benefit-tabs {
+		margin-bottom: 0;
+	}
+	margin-bottom: 60px;
+}
+
+.journal__category {
+	width: 100%;
+	max-width: 271px;
+
+	display: flex;
+	align-items: center;
+
+	.section__text {
+		font-weight: 700;
+		margin-right: 12px;
+	}
+}
+
+.journal__filter {
+	width: 100%;
+	max-width: 160px;
+	padding: 12px 16px;
+	position: relative;
+	appearance: none;
+
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	color: #424551;
+
+	background: #fff;
+	background: url('../img/blog/header/down.svg') no-repeat right;
+	background-position-x: calc(100% - 14px);
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+}
+
+.journal__posts {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 60px 0;
+
+	margin-bottom: 80px;
+}
+
+.journal__post {
+	max-width: 495px !important;
+
+	&--wide {
+		max-width: 705px !important;
+
+		.post__action {
+			margin-top: 20px;
+		}
+	}
+}
+
+.article {
+	background: #f4f5f6;
+}
+
+.article-form {
+	.product-input {
+		width: 422px;
+	}
+
+	.discount-input {
+		max-width: inherit;
+	}
+
+	.btn-discount {
+		width: 100%;
+		max-width: 154px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.journal__header {
+		flex-wrap: wrap;
+
+		.product__search {
+			margin-left: auto;
+		}
+	}
+
+	.journal__category {
+		max-width: 315px;
+	}
+
+	.journal__post {
+		max-width: 385px !important;
+		.post, .post__img img {
+			max-width: 385px !important;
+		}
+	
+		&--wide {
+			max-width: 580px !important;
+			.post, .post__img img {
+				max-width: 580px !important;
+			}
+		}
+	}
+
+	.newsletter__inner {
+		padding: 0 10px;
+	}
+
+	.newsletter__right {
+		max-width: 430px;
+	}
+
+	.article-form {
+		.product-input {
+			width: 320px;
+		}
+
+		.discount-input {
+			max-width: 266px;
+		}
+	}	
+}
+
+@media screen and (max-width: 991px) {
+	.journal__header {
+		.benefit-tabs {
+			width: 100%;
+		}
+	}
+
+	.product__search,
+	.journal__category {
+		margin-top: 25px;
+	}
+
+	.product-tabs__link a {
+		padding: 10px 48px !important;
+	}
+
+	.journal__post {
+		max-width: 300px !important;
+		.post, .post__img img {
+			max-width: 300px !important;
+		}
+	
+		&--wide {
+			max-width: 440px !important;
+			.post, .post__img img {
+				max-width: 440px !important;
+			}
+		}
+	}
+
+	.journal {
+		padding-bottom: 120px;
+	}
+
+	.article {
+		.newsletter__inner {
+			padding: 0;
+		}
+
+		.newsletter__left,
+		.newsletter__left img {
+			width: 96%;
+		} 
+
+		.newsletter__right {
+			padding: 35px 0;
+			max-width: 370px;
+		}
+
+		.newsletter__title {
+			margin-bottom: 40px !important;
+		}
+
+		.benefit-wrap__title {
+			font-size: 30px;
+		}
+
+		.article-form {
+			.product-input {
+				width: 350px;
+				margin-bottom: 15px;
+			}
+
+			.discount-input {
+				max-width: 350px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.journal__header {
+		.product-tabs__link a {
+			padding: 10px 20px !important;
+		}
+
+		.product-input {
+			width: 227px;
+		}
+	}
+
+	.journal__posts {
+		justify-content: center;
+
+		.post {
+			margin: 0;
+		}
+	}
+
+	.journal__post {
+		max-width: 430px !important;
+		.post, .post__img img {
+			max-width: 430px !important;
+		}
+	
+		&--wide {
+			max-width: 500px !important;
+			.post, .post__img img {
+				max-width: 500px !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.journal__header {
+		.benefit-tabs {
+			width: auto;
+			flex-direction: row;
+		}
+		
+		.journal__category, 
+		.product__search {
+			margin-top: 18px;
+		}
+
+		.benefit-tabs__item {
+			margin-bottom: 20px;
+		}
+
+		.product__search {
+			margin-left: 0;
+			margin-top: 30px;
+		}
+	}
+
+	.journal__post {
+		max-width: 300px !important;
+		.post, .post__img img {
+			max-width: 300px !important;
+		}
+	
+		&--wide {
+			max-width: 320px !important;
+			.post, .post__img img {
+				max-width: 320px !important;
+			}
+		}
+	}
+
+	.article {
+		.checkbox {
+			max-width: 350px;
+			img {
+				margin-right: 0;
+			}
+		}
+		.article-form {
+			.discount-input {
+				max-width: 250px;
+			}
+		}
+	}
+}
